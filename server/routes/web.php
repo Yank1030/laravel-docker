@@ -17,6 +17,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::resource('articles', 'ArticlesController');
+Route::get('/test', 'TestController@index');
+Route::get('/test2', 'Test2Controller@index');
+Route::get('/test3', 'Test2Controller@test3');
 /* Route::get('/hello', 'HelloController@index'); */
 
 /* Route::resource('tasks', 'TaskController'); */
